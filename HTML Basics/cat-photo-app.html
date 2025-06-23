@@ -66,6 +66,52 @@
       <section>
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <!-- The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line. -->
+          <fieldset>
+            <!-- The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form. -->
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <!-- In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. -->
+            <label
+              ><input
+                checked
+                id="indoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="indoor"
+              />
+              Indoor</label
+            >
+            <label
+              ><input
+                id="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="outdoor"
+              />
+              Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input
+              checked
+              id="loving"
+              type="checkbox"
+              name="personality"
+              value="loving"
+            />
+            <!-- There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute. -->
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              id="energetic"
+              type="checkbox"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic">Energetic</label>
+          </fieldset>
           <input
             type="text"
             name="catphotourl"
@@ -76,5 +122,11 @@
         </form>
       </section>
     </main>
+    <footer>
+      <p>
+        Copyright@Isha -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
   </body>
 </html>
