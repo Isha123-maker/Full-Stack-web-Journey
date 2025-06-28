@@ -1,40 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata and external resources -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title shown in browser tab -->
     <title>Cafe Menu</title>
+
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- Main menu container -->
     <div class="menu">
       <main>
+        <!-- Cafe Name and Establishment Year -->
         <h1>CAMPER CAFE</h1>
-        <p>Est. 2020</p>
+        <p class="established">Est. 2020</p>
+
+        <!-- Decorative horizontal line -->
+        <hr />
+
+        <!-- Coffee Section Starts -->
         <section>
           <h2>Coffee</h2>
-          <article>
-            <p>French Vanilla</p>
-            <p>3.00</p>
+
+          <!-- Coffee icon image -->
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg"
+            alt="coffee icon"
+          />
+
+          <!-- Each coffee item with name and price -->
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
           </article>
-          <article>
-            <p>Caramel Macchiato</p>
-            <p>3.75</p>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
           </article>
-          <article>
-            <p>Pumpkin Spice</p>
-            <p>3.50</p>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
           </article>
-          <article>
-            <p>Hazelnut</p>
-            <p>4.00</p>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
           </article>
-          <article>
-            <p>Mocha</p>
-            <p>4.50</p>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
           </article>
         </section>
+        <!-- Coffee Section Ends -->
+
+        <!-- Desserts Section Starts -->
+        <section>
+          <h2>Desserts</h2>
+
+          <!-- Pie icon image -->
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+
+          <!-- Each dessert item with name and price -->
+          <article class="item">
+            <p class="desserts">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="desserts">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="desserts">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="desserts">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+        <!-- Desserts Section Ends -->
       </main>
+
+      <!-- Decorative horizontal line at bottom -->
+      <hr class="bottom-line" />
+
+      <!-- Footer Starts -->
+      <footer>
+        <!-- Copyright with GitHub link -->
+        <p>Copyright@ <a href="www.github.com">Isha's Project</a></p>
+
+        <!-- Signature line -->
+        <p class="address">Made With Love</p>
+      </footer>
+      <!-- Footer Ends -->
     </div>
   </body>
 </html>
