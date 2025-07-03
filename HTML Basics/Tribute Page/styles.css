@@ -1,0 +1,39 @@
+body {
+  background-image: url(img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;            /* 👈 Optional: creates parallax scroll effect */
+  font-family: 'Segoe UI', sans-serif;     /* Just some styling */
+  margin: 0;
+  padding: 0;
+  color: rgba(202, 126, 11, 0.904);
+  background-size:cover ;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  text-decoration: wavy;
+  font-size: 40px;
+  font-style: oblique;
+  margin: auto;
+  margin-top: 4px;
+
+}
+
+.tech {
+  text-align: center;
+  font: bold;
+  font-size: x-large;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: left;
+  text-decoration: wavy;
+  font-size: 30px;
+  font-style: oblique;
+  margin: auto;
+  margin-top: 4px;
+}
