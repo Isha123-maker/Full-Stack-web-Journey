@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <h1 id="title">Your Voice Matters</h1>
+
+    <!-- Description -->
+    <p id="description">
+      Every opinion counts. Take a moment to share yours and help us make
+      meaningful improvements. Tell us how we’re doing—what works, what doesn’t,
+      and what you’d like to see next.
+    </p>
+
+    <!-- Survey Form -->
+    <form id="survey-form">
+      <!-- Name -->
+      <label for="name" id="name-label">
+        Full Name:
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+      </label>
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email" id="email-label">
+        Email Address:
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </label>
+      <br /><br />
+
+      <!-- Number -->
+      <label for="number" id="number-label">
+        Age (optional):
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="10"
+          max="100"
+          placeholder="Enter your age"
+        />
+      </label>
+      <br /><br />
+
+      <!-- Dropdown -->
+      <label for="dropdown">
+        Choose your country:
+        <select id="dropdown" name="country">
+          <option value="pakistan">Pakistan</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <!-- Radio Buttons -->
+      <p>Choose your role:</p>
+      <label>
+        <input type="radio" name="role" value="student" /> Student
+      </label>
+      <label>
+        <input type="radio" name="role" value="teacher" /> Teacher
+      </label>
+      <label>
+        <input type="radio" name="role" value="other" /> Other
+      </label>
+      <br /><br />
+
+      <!-- Checkboxes -->
+      <p>Select your skills:</p>
+      <label>
+        <input type="checkbox" name="skills" value="HTML" /> HTML
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="CSS" /> CSS
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="JavaScript" /> JavaScript
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="Python" /> Python
+      </label>
+      <br /><br />
+
+      <!-- Textarea -->
+      <label for="comments">
+        Additional Comments:
+        <textarea id="comments" name="comments" placeholder="Write here..."></textarea>
+      </label>
+      <br /><br />
+
+      <!-- Submit -->
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
