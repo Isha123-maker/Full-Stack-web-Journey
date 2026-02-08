@@ -1,0 +1,76 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+/* Your #playing-cards element should use flexbox to horizontally center its children,
+   allow them to wrap, and put a 20px space between them. */
+#playing-cards {
+    position: relative;
+
+    /* Flexbox requirements (comment) */
+    display: flex;
+    justify-content: center;   /* horizontally center children */
+    flex-wrap: wrap;           /* allow wrapping */
+    gap: 20px;                 /* 20px space between cards */
+
+    /* Optional but safe for better layout control */
+    align-items: flex-start;
+
+    /* Existing layout & styling (kept exactly) */
+    width: 60%;
+    height: 700px;
+    margin: 40px auto;
+    background-color: indianred;
+
+    border-radius: 16px;
+    padding-top: 80px;
+
+    box-shadow: inset 0 8px 15px rgba(0,0,0,0.3),
+                0 12px 25px rgba(0,0,0,0.4);
+
+    perspective: 1000px;
+}
+
+
+/* Each of your .card elements should use flexbox to justify its children using space-between */
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 150px;
+    height: 220px;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+
+.left {
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        font-size: 24px
+
+}
+
+
+/* Each of your .middle elements should use flexbox to display its children in a column. */
+.middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        font-size: 24px;
+
+}
+
+.right {
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-end;
+        font-size: 24px;
+        
+}

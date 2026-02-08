@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #111;
+  color: #fff;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 4px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+/* Cell types */
+.wall { background: #444; }
+.empty { background: #222; }
+.player { background: #4caf50; }
+.exit { background: #2196f3; }
+.trap { background: #e53935; }

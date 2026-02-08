@@ -1,0 +1,54 @@
+<!-- You should have an h1 element for the main title of the page.
+You should have three section elements.
+Inside the first section element, you should have an h2 element for the title of song playing.
+Below the h2 element, you should have an audio element with controls attribute and an aria-label attribute.
+Inside the audio element, you should have a source element with a src attribute pointing to an audio file and a type attribute. You are free to use this audio URL if you like: https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3
+Inside the second section element, you should have an h2 element for the title of the video playing.
+Below the h2 element, you should have a video element with controls, width attributes and an aria-label attribute.
+Inside the video element, you should have a source element with a src attribute pointing to a video file and a type attribute. You are free to use this video URL if you like: https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4
+Below the source element, you should have a track element with a src attribute pointing to a subtitles file and a kind attribute, a srclang attribute and a label attribute. You are free to use this subtitles URL if you like: https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt
+Inside the third section element, you should have an h2 element for the title of the section eg. "Transcript".
+Below the h2 element, you should have a p element with the transcript of the video. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Player Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>My Media Showcase</h1>
+
+  <section>
+    <h2>Chill Evening Vibes</h2>
+    <audio controls aria-label="Relaxing instrumental music">
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+  <section>
+    <h2>Understanding JavaScript Promises</h2>
+    <video controls width="640" aria-label="Educational video about JavaScript promises">
+      <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/synth-wave.mp3" type="video/mp4">
+      <source type="video/mp4">
+      <track
+        src="https://cdn.freecodecamp.org/curriculum/labs/javascript-promises.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English">
+    </video>
+  </section>
+
+  <section>
+    <h2>Transcript</h2>
+    <p>
+      This video explains how JavaScript promises work, why they are useful for handling
+      asynchronous operations, and how they help write cleaner, more readable code.
+      It walks through examples using real-world scenarios.
+    </p>
+  </section>
+
+</body>
+</html>
